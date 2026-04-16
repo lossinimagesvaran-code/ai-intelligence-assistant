@@ -74,14 +74,14 @@ function ChatInterface({ messages, onNewMessage, hasFiles }) {
   return (
     <div className="chat-interface">
       <div className="chat-header">
-        <h2>💬 Chat</h2>
+        <h2>Chat</h2>
         <p>Ask questions about your uploaded documents and data</p>
       </div>
 
       <div className="messages-container">
         {messages.length === 0 && (
           <div className="welcome-message">
-            <h3>👋 Welcome!</h3>
+            <h3>Welcome!</h3>
             <p>Upload files and start asking questions.</p>
             <div className="example-questions">
               <p><strong>Example questions:</strong></p>

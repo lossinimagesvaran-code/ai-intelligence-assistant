@@ -33,14 +33,14 @@ function App() {
           <FileUpload onFileUploaded={handleFileUploaded} />
           
           <div className="uploaded-files">
-            <h3>📁 Uploaded Files</h3>
+            <h3>Uploaded Files</h3>
             
             {uploadedFiles.documents.length > 0 && (
               <div className="file-section">
                 <h4>Documents (PDF)</h4>
                 <ul>
                   {uploadedFiles.documents.map((file, idx) => (
-                    <li key={idx}>📄 {file}</li>
+                    <li key={idx}> {file}</li>
                   ))}
                 </ul>
               </div>
@@ -51,7 +51,7 @@ function App() {
                 <h4>Data Files (CSV/Excel)</h4>
                 <ul>
                   {uploadedFiles.data.map((file, idx) => (
-                    <li key={idx}>📊 {file}</li>
+                    <li key={idx}> {file}</li>
                   ))}
                 </ul>
               </div>

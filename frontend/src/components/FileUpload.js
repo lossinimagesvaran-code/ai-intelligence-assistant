@@ -47,7 +47,7 @@ function FileUpload({ onFileUploaded }) {
 
   return (
     <div className="file-upload">
-      <h3>📤 Upload Files</h3>
+      <h3>Upload Files</h3>
       
       <div className="upload-area">
         <input
