@@ -3,6 +3,8 @@ import axios from 'axios';
 import './ChatInterface.css';
 import Message from './Message';
 
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+
 function ChatInterface({ messages, onNewMessage, hasFiles }) {
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
@@ -41,7 +43,7 @@ function ChatInterface({ messages, onNewMessage, hasFiles }) {
     setLoading(true);
 
     try {
-      const response = await axios.post('/api/query', {
+      const response = await axios.post(`${API_URL}/api/query`, {
         question: input.trim(),
         session_id: 'default_session'
       });
